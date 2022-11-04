@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(Photos/wallpaperflare.com_wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.page-links {
+    flex: 1;
+    text-align: right;
+    
+}
+
+.page-links ul li {
+    list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+}
+
+.page-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+
+}
+
+.page-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: gold;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.page-links ul li:hover::after{
+    width: 100%;
+}
+
+.main-title {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-title h1 {
+    font-size: 190px;
+    font-family: 'Lobster', cursive;
+}
+
+.main-title p {
+    margin: 10px 0 20px;
+    font-size: 18px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.main-title h5 {
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Lobster', cursive;
+}
+
+#about-modalBtn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid White;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Lobster', cursive;
+    font-size: 14px;
+
+}
+
+#about-modalBtn:hover {
+    border: 1px solid gold;
+    background: gold;
+    transition: 1s;
+}
+
+#aboutMeModal {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+}
+#modal-textbox {
+    /* background-color: white; */
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    margin: 150px auto;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+@media(max-width: 700px) {
+    .main-title h1 {
+            font-size: 20px;
+           
+        }
+.page-links ul li {
+    display: block;
+}
+}
+
+/*-------- tell me about yourself -----*/
+
+.projects {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'lobster', cursive;
+
+}
+
+.projects h1{
+    font-size: 48px;
+    color: midnightblue;
+}
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.projects-col img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.projects-col p{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+.projects-col h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
